@@ -10,6 +10,10 @@ def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
+    # FPS Limiting
+    timer = pygame.time.Clock()
+    dt = 0
+
     # Game loop starts here
     while True:
         log_state()
@@ -20,6 +24,8 @@ def main():
 
 
         screen.fill("black")
+
+        dt = timer.tick(60) / 1000
 
         # Keep this at the end always
         pygame.display.flip()
