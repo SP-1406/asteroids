@@ -11,3 +11,5 @@ wheels/
 
 # Other
 game_state.jsonl
+AsteroidFieldNotes.txt
+game_events.jsonl
