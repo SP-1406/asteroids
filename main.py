@@ -56,7 +56,7 @@ def main():
                 if obj.collides_with(bullet):
                     log_event("asteroid_shot")
                     bullet.kill()
-                    obj.kill()
+                    obj.split()
 
         screen.fill("black")
 
